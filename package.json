@@ -9,13 +9,39 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@apollo/client": "^3.7.17",
+    "@expo/webpack-config": "^18.0.1",
     "expo": "~48.0.18",
     "expo-status-bar": "~1.4.4",
+    "formik": "^2.4.2",
+    "graphql": "^15.8.0",
     "react": "18.2.0",
-    "react-native": "0.71.8"
+    "react-dom": "18.2.0",
+    "react-native": "0.71.8",
+    "react-native-web": "~0.18.10",
+    "react-router-native": "^6.14.0",
+    "yup": "^1.2.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.0"
+    "@babel/core": "^7.20.0",
+    "@babel/eslint-parser": "^7.22.5",
+    "eslint": "^8.43.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-config-standard-jsx": "^11.0.0",
+    "eslint-config-standard-react": "^13.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^16.0.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.32.2"
   },
-  "private": true
+  "private": true,
+  "eslintConfig": {
+    "parser": "@babel/eslint-parser",
+    "extends": [
+      "standard",
+      "standard-jsx",
+      "standard-react"
+    ]
+  }
 }
